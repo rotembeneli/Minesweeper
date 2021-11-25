@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mines.css">
+    <title>Document</title>
+</head>
+
+<body onload="initGame()">
+    <h1>MINESWEEPER</h1>
+    <div><button class="restart" onclick="restartGame()">😁</button></div>
+    <div class="level">
+        <button onclick="setDiff(this)">Easy 4*4</button>
+        <button onclick="setDiff(this)">Medium 8*8</button>
+        <button onclick="setDiff(this)">Expert 12*12</button>
+    </div>
+    <table id="table">
+        <tbody class="board"></tbody>
+    </table>
+    <div class="modal">
+        <h2>Game Over</h2>
+        <h4>Bombs Found: <span class="numBombs"></span></h4>
+        <!--back-->
+        <h4>Best Score: <span class="bestScore"></span></h4>
+        <!--back-->
+        <button onclick="closeModal(true)">close</button>
+    </div>
+    <div class="timer">WILL BE A TIMER</div>
+    <div class="bombCount"></div>
+    <div class="lives">
+        <h2></h2>
+    </div>
+    <script src="mines.js"></script>
+    <script src="utils.js"></script>
+</body>
+
+</html>
