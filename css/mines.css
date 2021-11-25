@@ -1,0 +1,138 @@
+@font-face {
+    font-family: minesweeper;
+    src: url(fonts/mine-sweeper.ttf);
+}
+
+@font-face {
+    font-family: digital-clock;
+    src: url(fonts/digital-7.ttf);
+}
+
+h1 {
+    text-align: center;
+    background-color: rgb(149, 149, 149);
+    width: 250px;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+
+body {
+    text-align: center;
+    background-color: rgb(34, 34, 34);
+}
+
+table {
+    color: white;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(66, 66, 66);
+}
+
+
+.cell {
+    background-color: rgb(149, 149, 149);
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    font-family: minesweeper;
+    font-size: 15px;
+    box-shadow: inset -5px -5px #6e6e6e, inset 5px 5px #d9d6d6;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.modal {
+    background-color: rgb(155, 155, 155);
+    display: none;
+    position: absolute;
+    top: 200px;
+    right: 45%;
+    padding: 5px;
+    width: 200px;
+    height: 150px
+}
+
+.modal button {
+    margin: auto;
+}
+
+.level button{
+    border: gray solid 1px;
+    background-color: black;
+    color: red;
+    text-align: center;
+    font-family: digital-clock;
+    font-size: 20px;
+    margin-bottom: 10px;
+    height: 20px;
+    width: 108px;
+}
+
+.level button:hover {
+    background-color: rgb(65, 65, 65);
+}
+
+.lives {
+    height: 70px;
+    background-color: lightseagreen;
+    display: none;
+    top: 10px;
+    right: 10px;
+    padding: 5px;
+    width: 300px;
+}
+
+
+.timer{
+    color:red ;
+    border: gray solid 1px;
+    background-color: black;
+    width: 70px;
+    height: 30px;
+    font-family: digital-clock;
+    font-size: 40px;
+    margin: 10px;
+}
+
+.bombCount {
+    border: gray solid 1px;
+    background-color: black;
+    color: red;
+    height: 30px;
+    width: 70px;
+    text-align: center;
+    font-family: digital-clock;
+    font-size: 40px;
+    margin: 10px;
+}
+
+.restart {
+    width: 70px;
+    height: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 40px;
+    background-color: transparent;
+    border: none;
+}
+
+.level {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.hearts {
+    height: 100px;
+}
+
+img {
+    height: 40px;
+}
